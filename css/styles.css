@@ -41,9 +41,9 @@ footer {
 
 button#refresh-button {
     position: absolute;
-    bottom: 20px; /* Mantém o botão na parte inferior */
-    left: 50%; /* Centraliza horizontalmente */
-    transform: translateX(-50%); /* Ajusta o alinhamento para o centro */
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
     padding: 10px 20px;
     background-color: #007BFF;
     color: white;
