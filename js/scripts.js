@@ -12,11 +12,16 @@ function setLastRefresh() {
     lastRefreshElement.textContent = now.toLocaleString();
 }
 
+// Recarregar a página automaticamente após 5 minutos (300000 ms)
+setTimeout(() => {
+    location.reload();
+}, 300000); // 5 minutos em milissegundos
+
 // Atualizar a página ao clicar no botão
 document.getElementById('refresh-button').addEventListener('click', () => {
     location.reload();
 });
 
 // Inicializar a página
-setLastRefresh();
-setInterval(updateClock, 1000);
+setLastRefresh(); // Define a última atualização no carregamento
+setInterval(updateClock, 1000); // Atualiza o relógio a cada segundo
